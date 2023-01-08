@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager_Design"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayoutDS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayoutDS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicatorColor="@android:color/holo_blue_bright">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Ti_shipDesign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ship" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Ti_moduleDesign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="module" />
+    </android.support.design.widget.TabLayout>
+
+</android.support.constraint.ConstraintLayout>
